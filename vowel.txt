@@ -1,0 +1,9 @@
+DECLARE
+    x CHAR(1) := '&x';
+BEGIN
+    IF x = 'a' OR x = 'e' OR x = 'i' OR x = 'o' OR x = 'u' THEN
+        DBMS_OUTPUT.PUT_LINE(x || ' is a vowel character');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE(x || ' is not a vowel character');
+    END IF;
+END;
